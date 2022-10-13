@@ -7,7 +7,7 @@ public class Conn {
     public Conn(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/employeemanagementsystem", "root", "Navaratri@2022");
+            c = DriverManager.getConnection("<Your link for localhost>", "<your username>", "<your workbench password>");
             s = c.createStatement();
         }catch (Exception e){
             e.printStackTrace();
